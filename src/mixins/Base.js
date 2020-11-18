@@ -51,6 +51,16 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async updateByUuid(uuid, body) {
+        this.options.url += uuid;
+        this.options.method = 'PUT';
+        this.options.headers.Accept += 'version=2';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
