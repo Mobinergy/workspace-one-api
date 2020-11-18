@@ -1,6 +1,11 @@
+let base = require('./../../mixins/Base');
 
 function Users(options) {
-    console.log(options);
+    options.url += 'users/';
+
+    this.options = options;
 }
+
+Object.assign(Users.prototype, base);
 
 module.exports = Users;

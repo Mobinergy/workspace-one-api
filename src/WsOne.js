@@ -1,27 +1,26 @@
 'use strict';
-const api = require('./api');
 const generateAuthorization = require('./utils/generateAuthorization');
 
 class WsOne {
 
     constructor(config) {
 
-        if (config.username && config.password && config.apiKey) {
+        if (config.apiHost && config.username && config.password && config.apiKey) {
 
-            api({
+            this.options = {
+                url: `https://${config.apiHost}/`,
                 headers: {
                     Authorization: generateAuthorization(config.username, config.password),
                     'aw-tenant-code': config.apiKey,
                     Accept: 'application/json;',
                 }
-            })
+            };
+
+            this.system = require('./api/system')(this.options);
+
         } else {
             console.log('Oops! there is something wrong with the config.');
         }
-    }
-
-    async listAllProjects() {
-
     }
 }
 
