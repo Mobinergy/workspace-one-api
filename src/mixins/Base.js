@@ -78,6 +78,14 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async deactivateById(id) {
+        this.options.url += `${id}/deactivate`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
