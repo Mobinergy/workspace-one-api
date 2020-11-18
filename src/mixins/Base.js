@@ -94,7 +94,25 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
-    }
+    },
+
+    async bulkActivate(body) {
+        this.options.url += 'activate';
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async bulkDeactivate(body) {
+        this.options.url += 'deactivate';
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = base;
