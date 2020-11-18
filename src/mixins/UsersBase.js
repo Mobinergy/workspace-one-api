@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const base = {
+const usersBase = {
 
     async listAll() {
         this.options.url += 'search';
@@ -133,4 +133,4 @@ const base = {
     },
 };
 
-module.exports = base;
+module.exports = usersBase;
