@@ -86,6 +86,14 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async changeLocationGroup(id, targetLGId) {
+        this.options.url += `${id}/changelocationgroup?targetLG=${targetLGId}`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
