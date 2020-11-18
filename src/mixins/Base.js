@@ -61,6 +61,15 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async updateById(id, body) {
+        this.options.url += `${id}/update`;
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
