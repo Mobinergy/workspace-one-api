@@ -8,6 +8,14 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async listById(id) {
+        this.options.url += id;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
