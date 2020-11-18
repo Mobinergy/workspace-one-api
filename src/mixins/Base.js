@@ -113,6 +113,15 @@ const base = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async bulkDelete(body) {
+        this.options.url += 'delete';
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = base;
