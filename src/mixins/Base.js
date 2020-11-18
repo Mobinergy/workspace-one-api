@@ -70,6 +70,14 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async activateById(id) {
+        this.options.url += `${id}/activate`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
