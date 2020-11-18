@@ -42,6 +42,15 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async create(body) {
+        this.options.method = 'POST';
+        this.options.headers.Accept += 'version=2';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
