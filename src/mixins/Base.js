@@ -16,6 +16,14 @@ const base = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async delete(id) {
+        this.options.url += `${id}/delete`;
+        this.options.method = 'DELETE';
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
