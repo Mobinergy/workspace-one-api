@@ -18,6 +18,15 @@ const base = {
         return response.data;
     },
 
+    async listByUuid(uuid) {
+        this.options.url += uuid;
+        this.options.method = 'GET';
+        this.options.headers.Accept += 'version=2';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
     async delete(id) {
         this.options.url += `${id}/delete`;
         this.options.method = 'DELETE';
