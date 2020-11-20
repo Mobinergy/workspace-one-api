@@ -10,6 +10,6 @@ function Users(options) {
 }
 
 Object.assign(Users.prototype, usersBase);
-Object.assign(Users.prototype, pick(base, ['listAll']));
+Object.assign(Users.prototype, pick(base, ['listAll', 'listById', 'listByUuid']));
 
 module.exports = Users;

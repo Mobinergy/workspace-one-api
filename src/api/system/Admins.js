@@ -10,6 +10,6 @@ function Admins(options) {
 }
 
 Object.assign(Admins.prototype, adminsBase);
-Object.assign(Admins.prototype, pick(base, ['listAll']));
+Object.assign(Admins.prototype, pick(base, ['listAll', 'listById', 'listByUuid']));
 
 module.exports = Admins;
