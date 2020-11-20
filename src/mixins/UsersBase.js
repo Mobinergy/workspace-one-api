@@ -3,23 +3,6 @@ const _ = require('lodash');
 
 const usersBase = {
 
-    async deleteById(id) {
-        this.options.url += `${id}/delete`;
-        this.options.method = 'DELETE';
-
-        let response = await axios(this.options);
-        return response.data;
-    },
-
-    async deleteByUuid(uuid) {
-        this.options.url += uuid;
-        this.options.method = 'DELETE';
-        this.options.headers.Accept += 'version=2';
-
-        let response = await axios(this.options);
-        return response.data;
-    },
-
     async create(body) {
         this.options.method = 'POST';
         this.options.headers.Accept += 'version=2';
