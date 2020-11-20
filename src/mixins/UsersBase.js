@@ -3,25 +3,6 @@ const _ = require('lodash');
 
 const usersBase = {
 
-    async listAll(params) {
-        let query = '';
-
-        if (!_.isEmpty(params)) {
-            query = '?'
-            _.forOwn(params, (value, key) => {
-                query += `${key}=${value}&`;
-            });
-
-            query = query.slice(0, -1);
-        }
-
-        this.options.url += `search${query}`;
-        this.options.method = 'GET';
-
-        let response = await axios(this.options);
-        return response.data;
-    },
-
     async listById(id) {
         this.options.url += id;
         this.options.method = 'GET';
