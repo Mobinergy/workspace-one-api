@@ -32,6 +32,14 @@ const sslPinningBase = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async deletePinnedHostByGuid(guid) {
+        this.options.url += `pinnedhost/${guid}`;
+        this.options.method = 'DELETE';
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
