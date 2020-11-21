@@ -51,5 +51,83 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Enable a pinned relationship between a host and cert.
 - [x] Disable a pinned relationship between a host and cert.
 
+## AndroidWork
+In progress
+
+## Apns
+In progress
+
+## AppContent
+In progress
+
+## CustomAttributes
+In progress
+
+## CustomGatewaySettings
+In progress
+
+## CustomReports
+In progress
+
+## DeviceRegistration
+In progress
+
+## EnrollmentCustomAttributes
+In progress
+
+## EnrollmentCustomizationSettings
+In progress
+
+## EventNotifications
+In progress
+
+## ExpressLicense
+In progress
+
+## Hub
+In progress
+
+## Info
+In progress
+
+## LookupFields
+In progress
+
+## Notifications
+In progress
+
+## Operations
+In progress
+
+## OrganizationGroupCustomAttributes
+In progress
+
+## OrganizationGroups
+In progress
+
+## ProductMonitor
+In progress
+
 ## Tags
+In progress
+
+## UserGroups
+In progress
+
+## EnrollmentRestrictionPolicy
+In progress
+
+## GroupSyncActions
+In progress
+
+## ScimGroups
+In progress
+
+## ScimServiceProviderConfig
+In progress
+
+## ScimUsers
+In progress
+
+## AdminIdentity
 In progress
