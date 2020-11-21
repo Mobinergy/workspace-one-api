@@ -18,11 +18,11 @@ const base = {
         this.options.url += `search${query}`;
         this.options.method = 'GET';
 
-        /*if (this.name === 'admins') {
+        if (this.name === 'groups') {
             this.options.headers.Accept = 'application/json;version=2';
         } else {
             this.options.headers.Accept = 'application/json;';
-        }*/
+        }
 
         let response = await axios(this.options);
         return response.data;
@@ -82,8 +82,8 @@ const base = {
     },
 
     async updateById(id, body) {
-        this.options.url += `${id}/update`;
-        this.options.method = 'POST';
+        this.options.url += this.name === 'groups' ? `${id}` : `${id}/update`;
+        this.options.method = this.name === 'groups' ? 'PUT' : 'POST';
         this.options.data = body;
 
         let response = await axios(this.options);

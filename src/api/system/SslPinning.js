@@ -1,5 +1,4 @@
 let sslPinningBase = require('./../../mixins/SslPinningBase');
-let pick = require('lodash/pick.js');
 
 function SslPinning(options) {
     this.name = 'sslpinning';
