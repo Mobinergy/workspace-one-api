@@ -40,7 +40,25 @@ const sslPinningBase = {
 
         let response = await axios(this.options);
         return response.data;
-    }
+    },
+
+    async pinCertificate(body) {
+        this.options.url += `pincertificate`;
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async unpinCertificate(body) {
+        this.options.url += `unpincertificate`;
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = sslPinningBase;
