@@ -75,6 +75,14 @@ const sslPinningBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async syncWithAutoDiscovery(ogId) {
+        this.options.url += `syncwithautodiscovery/${ogId}`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = sslPinningBase;
