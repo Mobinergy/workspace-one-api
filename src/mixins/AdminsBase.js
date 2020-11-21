@@ -57,6 +57,22 @@ const adminsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async getConfigurationsAboutPage(id) {
+        this.options.url += `${id}/configurationsaboutpage`;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async updateConfigurationsAboutPage(id, showPage) {
+        this.options.url += `${id}/configurationsaboutpage/${showPage}`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = adminsBase;
