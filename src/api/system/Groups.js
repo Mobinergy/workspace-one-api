@@ -12,7 +12,7 @@ function Groups(options) {
 
 Object.assign(Groups.prototype, groupsBase);
 Object.assign(Groups.prototype, pick(base, [
-    'listAll', 'listById', 'listByUuid', 'updateByUuid', 'updateById'
+    'listAll', 'listById', 'listByUuid', 'updateByUuid', 'updateById', 'deleteByUuid', 'deleteById'
 ]));
 
 module.exports = Groups;

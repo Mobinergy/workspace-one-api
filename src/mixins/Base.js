@@ -46,7 +46,7 @@ const base = {
     },
 
     async deleteById(id) {
-        this.options.url += `${id}/delete`;
+        this.options.url += this.name === 'groups' ? `${id}` : `${id}/delete`;
         this.options.method = 'DELETE';
 
         let response = await axios(this.options);
