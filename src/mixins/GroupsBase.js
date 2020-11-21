@@ -12,6 +12,14 @@ const adminsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async getChildren(ogId) {
+        this.options.url += `${ogId}/children`;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = adminsBase;
