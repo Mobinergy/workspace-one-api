@@ -4,6 +4,7 @@ let pick = require('lodash/pick.js');
 
 function Admins(options) {
     this.name = 'admins';
+    this.url = options.url;
     options.url += `${this.name}/`;
 
     this.options = options;
