@@ -59,6 +59,22 @@ const sslPinningBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async enable(ogId) {
+        this.options.url += `enable/${ogId}`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async disable(ogId) {
+        this.options.url += `disable/${ogId}`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = sslPinningBase;
