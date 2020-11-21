@@ -14,6 +14,24 @@ const sslPinningBase = {
 
         let response = await axios(this.options);
         return response.data;
+    },
+
+    async createPinnedHost(body) {
+        this.options.url += `pinnedhost`;
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async updatePinnedHostByGuid(guid, body) {
+        this.options.url += `pinnedhost/${guid}`;
+        this.options.method = 'PATCH';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
     }
 };
 
