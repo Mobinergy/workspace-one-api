@@ -39,5 +39,17 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Update admin configuration about page by ID.
 
 ## SSLPinning
+- [x] Get pinned hosts by host name.
+- [x] Create a pinned host.
+- [x] Update a specific pinned host by Guid.
+- [x] Delete a specific pinned host by Guid.
+- [x] Pin a given certificate to a pinned host.
+- [x] Unpin a given certificate from a pinned host.
+- [x] Enable SSL Pinning at an Organization Group.
+- [x] Disable SSL Pinning at an Organization Group.
+- [x] Synchronize Pins with Auto Discovery at an Organization Group.
+- [x] Enable a pinned relationship between a host and cert.
+- [x] Disable a pinned relationship between a host and cert.
 
+## Tags
 In progress
