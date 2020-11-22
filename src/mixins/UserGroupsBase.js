@@ -51,6 +51,22 @@ const userGroupsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async addUser(groupId, userId) {
+        this.options.url += `${groupId}/user/${userId}/addusertogroup`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async removeUser(groupId, userId) {
+        this.options.url += `${groupId}/user/${userId}/removeuserfromgroup`;
+        this.options.method = 'POST';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = userGroupsBase;
