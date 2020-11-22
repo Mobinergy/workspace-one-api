@@ -88,6 +88,9 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Gets the list of profiles.
 - [x] Gets the deployment status of the specified app or profile on various devices.
 
+### OrganizationGroupCustomAttributes
+- [x] Gets Custom Attribute Details for the specified Organization Group.
+
 ### AndroidWork
 In progress
 
@@ -131,9 +134,6 @@ In progress
 In progress
 
 ### Operations
-In progress
-
-### OrganizationGroupCustomAttributes
 In progress
 
 ### EnrollmentRestrictionPolicy

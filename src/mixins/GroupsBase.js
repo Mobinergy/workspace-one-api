@@ -89,6 +89,14 @@ const adminsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async getCustomAttributes(ogId) {
+        this.options.url += `${ogId}/customattributes`;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = adminsBase;
