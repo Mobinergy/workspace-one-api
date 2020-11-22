@@ -67,6 +67,15 @@ An NPM package to wrap Workspace One REST APIs.
 ### Info
 - [x] Retrieves the information of the AirWatch Developer APIs.
 
+### UserGroups
+- [x] List all user groups.
+- [x] List user group by name.
+- [x] Creates a Custom User Group.
+- [x] Adds the user to custom User Group.
+- [x] Removes the user from custom User Group.
+- [x] Retrieves list of users from provided custom user group id.
+- [x] Delete custom User Group by ID.
+
 ### AndroidWork
 In progress
 
@@ -119,9 +128,6 @@ In progress
 In progress
 
 ### Tags
-In progress
-
-### UserGroups
 In progress
 
 ### EnrollmentRestrictionPolicy
