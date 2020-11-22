@@ -51,6 +51,19 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Enable a pinned relationship between a host and cert.
 - [x] Disable a pinned relationship between a host and cert.
 
+## OrganizationGroups
+- [x] List all organization groups.
+- [x] List organization group by ID.
+- [x] List organization group by Uuid.
+- [x] Update an organization group by ID.
+- [x] Update an organization group by Uuid.
+- [x] Delete an organization group by ID.
+- [x] Delete an organization group by Uuid.
+- [x] Create a new organization group.
+- [x] Get a list of child organization groups of the specified organization group.
+- [x] Get the Device Count for all the Organization Groups that are available under the specified Organization Group.
+- [x] Provides the device sample rates for an organization group by Platform.
+
 ## AndroidWork
 In progress
 
@@ -100,9 +113,6 @@ In progress
 In progress
 
 ## OrganizationGroupCustomAttributes
-In progress
-
-## OrganizationGroups
 In progress
 
 ## ProductMonitor
