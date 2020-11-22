@@ -20,7 +20,7 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Delete enrollment users in bulk.
 - [x] Upload SMime certificates to enrollment user by ID.
 
-## Admins
+### Admins
 - [x] List all admins.
 - [x] List admin by ID.
 - [x] List admin by Uuid.
@@ -38,7 +38,7 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Get admin configuration about page by ID.
 - [x] Update admin configuration about page by ID.
 
-## SSLPinning
+### SSLPinning
 - [x] Get pinned hosts by host name.
 - [x] Create a pinned host.
 - [x] Update a specific pinned host by Guid.
@@ -51,7 +51,7 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Enable a pinned relationship between a host and cert.
 - [x] Disable a pinned relationship between a host and cert.
 
-## OrganizationGroups
+### OrganizationGroups
 - [x] List all organization groups.
 - [x] List organization group by ID.
 - [x] List organization group by Uuid.
@@ -64,80 +64,80 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Get the Device Count for all the Organization Groups that are available under the specified Organization Group.
 - [x] Provides the device sample rates for an organization group by Platform.
 
-## Info
+### Info
 - [x] Retrieves the information of the AirWatch Developer APIs.
 
-## AndroidWork
+### AndroidWork
 In progress
 
-## Apns
+### Apns
 In progress
 
-## AppContent
+### AppContent
 In progress
 
-## CustomAttributes
+### CustomAttributes
 In progress
 
-## CustomGatewaySettings
+### CustomGatewaySettings
 In progress
 
-## CustomReports
+### CustomReports
 In progress
 
-## DeviceRegistration
+### DeviceRegistration
 In progress
 
-## EnrollmentCustomAttributes
+### EnrollmentCustomAttributes
 In progress
 
-## EnrollmentCustomizationSettings
+### EnrollmentCustomizationSettings
 In progress
 
-## EventNotifications
+### EventNotifications
 In progress
 
-## ExpressLicense
+### ExpressLicense
 In progress
 
-## Hub
+### Hub
 In progress
 
-## LookupFields
+### LookupFields
 In progress
 
-## Notifications
+### Notifications
 In progress
 
-## Operations
+### Operations
 In progress
 
-## OrganizationGroupCustomAttributes
+### OrganizationGroupCustomAttributes
 In progress
 
-## ProductMonitor
+### ProductMonitor
 In progress
 
-## Tags
+### Tags
 In progress
 
-## UserGroups
+### UserGroups
 In progress
 
-## EnrollmentRestrictionPolicy
+### EnrollmentRestrictionPolicy
 In progress
 
-## GroupSyncActions
+### GroupSyncActions
 In progress
 
-## ScimGroups
+### ScimGroups
 In progress
 
-## ScimServiceProviderConfig
+### ScimServiceProviderConfig
 In progress
 
-## ScimUsers
+### ScimUsers
 In progress
 
-## AdminIdentity
+### AdminIdentity
 In progress
