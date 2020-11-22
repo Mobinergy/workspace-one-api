@@ -20,6 +20,33 @@ const adminsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async deviceCounts(params) {
+        let query = '';
+
+        if (!_.isEmpty(params)) {
+            query = '?';
+            _.forOwn(params, (value, key) => {
+                query += `${key}=${value}&`;
+            });
+
+            query = query.slice(0, -1);
+        }
+
+        this.options.url += `devicecounts${query}`;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async getSampleRates(ogId, platform) {
+        this.options.url += `${ogId}/samplerates?platform=${platform}`;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = adminsBase;
