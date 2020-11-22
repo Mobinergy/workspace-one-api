@@ -47,6 +47,22 @@ const adminsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async getTags(ogId) {
+        this.options.url += `${ogId}/tags`;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async getTagDetails(ogId, tagId) {
+        this.options.url += `${ogId}/tags/${tagId}`;
+        this.options.method = 'GET';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = adminsBase;
