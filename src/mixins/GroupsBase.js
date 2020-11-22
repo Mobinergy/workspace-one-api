@@ -63,6 +63,32 @@ const adminsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async deleteTag(ogId, tagId) {
+        this.options.url += `${ogId}/tags/${tagId}`;
+        this.options.method = 'DELETE';
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async addTag(ogId, body) {
+        this.options.url += `${ogId}/addTag`;
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
+
+    async updateTag(ogId, tagId, body) {
+        this.options.url += `${ogId}/tags/${tagId}/update`;
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = adminsBase;
