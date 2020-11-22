@@ -83,6 +83,11 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Add a tag for the specified organization group.
 - [x] Updates a tag for the specified organization group.
 
+### ProductMonitor
+- [x] Gets the list of apps.
+- [x] Gets the list of profiles.
+- [x] Gets the deployment status of the specified app or profile on various devices.
+
 ### AndroidWork
 In progress
 
@@ -129,9 +134,6 @@ In progress
 In progress
 
 ### OrganizationGroupCustomAttributes
-In progress
-
-### ProductMonitor
 In progress
 
 ### EnrollmentRestrictionPolicy
