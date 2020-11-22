@@ -76,6 +76,13 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Retrieves list of users from provided custom user group id.
 - [x] Delete custom User Group by ID.
 
+### Tags
+- [x] Retrieves the tags for the specified organization group.
+- [x] Retrieves the tag details for a given tag in an organization group.
+- [x] Deletes a tag for the specified organization group.
+- [x] Add a tag for the specified organization group.
+- [x] Updates a tag for the specified organization group.
+
 ### AndroidWork
 In progress
 
@@ -125,9 +132,6 @@ In progress
 In progress
 
 ### ProductMonitor
-In progress
-
-### Tags
 In progress
 
 ### EnrollmentRestrictionPolicy
