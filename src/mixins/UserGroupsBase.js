@@ -42,6 +42,15 @@ const userGroupsBase = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async create(body) {
+        this.options.url += `createcustomusergroup`;
+        this.options.method = 'POST';
+        this.options.data = body;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = userGroupsBase;
