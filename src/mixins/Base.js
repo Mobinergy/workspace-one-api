@@ -89,6 +89,14 @@ const base = {
         let response = await axios(this.options);
         return response.data;
     },
+
+    async getInfo(version) {
+        this.options.method = 'GET';
+        this.options.headers.Accept += `version=${version ? version: '1'}`;
+
+        let response = await axios(this.options);
+        return response.data;
+    },
 };
 
 module.exports = base;

@@ -64,6 +64,9 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Get the Device Count for all the Organization Groups that are available under the specified Organization Group.
 - [x] Provides the device sample rates for an organization group by Platform.
 
+## Info
+- [x] Retrieves the information of the AirWatch Developer APIs.
+
 ## AndroidWork
 In progress
 
@@ -98,9 +101,6 @@ In progress
 In progress
 
 ## Hub
-In progress
-
-## Info
 In progress
 
 ## LookupFields

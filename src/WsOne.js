@@ -33,6 +33,10 @@ class WsOne {
             console.log('Oops! there is something wrong with the config.');
         }
     }
+
+    getApiInfo(version) {
+        return this.system.info.getInfo(version);
+    }
 }
 
 module.exports = WsOne;
