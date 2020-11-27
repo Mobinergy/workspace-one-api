@@ -91,6 +91,14 @@ An NPM package to wrap Workspace One REST APIs.
 ### OrganizationGroupCustomAttributes
 - [x] Gets Custom Attribute Details for the specified Organization Group.
 
+### Notifications
+- [x] Get the list of notifications.
+- [x] Get notifications counts.
+- [x] Dismiss a notification by ID.
+
+### CustomAttributes
+In progress
+
 ### AndroidWork
 In progress
 
@@ -98,9 +106,6 @@ In progress
 In progress
 
 ### AppContent
-In progress
-
-### CustomAttributes
 In progress
 
 ### CustomGatewaySettings
@@ -128,9 +133,6 @@ In progress
 In progress
 
 ### LookupFields
-In progress
-
-### Notifications
 In progress
 
 ### Operations
