@@ -15,7 +15,7 @@ const base = {
             query = query.slice(0, -1);
         }
 
-        this.options.url += `search${query}`;
+        this.options.url += this.name === 'notifications' ? `${query}` : `search${query}`;
         this.options.method = 'GET';
 
         if (this.name === 'groups') {

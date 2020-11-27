@@ -1,7 +1,7 @@
 const axios = require('axios');
 const _ = require('lodash');
 
-const adminsBase = {
+const groupsBase = {
 
     async create(parentOgId, body) {
         this.options.url += parentOgId;
@@ -99,4 +99,4 @@ const adminsBase = {
     },
 };
 
-module.exports = adminsBase;
+module.exports = groupsBase;
