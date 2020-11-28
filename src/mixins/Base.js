@@ -64,8 +64,13 @@ const base = {
 
     async create(body) {
         this.options.method = 'POST';
-        this.options.headers.Accept += 'version=2';
         this.options.data = body;
+
+        if (this.name === 'expresslicenses') {
+            this.options.headers.Accept = 'application/json;';
+        } else {
+            this.options.headers.Accept = 'application/json;version=2';
+        }
 
         let response = await axios(this.options);
         return response.data;

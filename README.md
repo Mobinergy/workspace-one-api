@@ -106,6 +106,9 @@ An NPM package to wrap Workspace One REST APIs.
 ### Hub
 - [x] Updates Hub Services configuration URL at given organization group.
 
+### ExpressLicense
+- [x] Creates specific number of aw express licenses at given organization group.
+
 ### CustomAttributes
 In progress
 
@@ -134,9 +137,6 @@ In progress
 In progress
 
 ### EventNotifications
-In progress
-
-### ExpressLicense
 In progress
 
 ### Hub
