@@ -1,9 +1,9 @@
 const axios = require('axios');
 const _ = require('lodash');
 
-const notificationsBase = {
+const lookupFieldsBase = {
 
-    async getKeysByOgId(ogUuid) {
+    async getKeysByOgUuid(ogUuid) {
         this.options.url += `keys/${ogUuid}`;
         this.options.method = 'GET';
 
@@ -20,4 +20,4 @@ const notificationsBase = {
     },
 };
 
-module.exports = notificationsBase;
+module.exports = lookupFieldsBase;

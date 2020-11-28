@@ -96,6 +96,13 @@ An NPM package to wrap Workspace One REST APIs.
 - [x] Get notifications counts.
 - [x] Dismiss a notification by ID.
 
+### LookupFields
+- [x] Retrieves lookup keys by organization group Uuid.
+- [x] Retrieves lookup keys for a specified lookup field type.
+
+### Operations
+- [x] Retrieves status for an operation.
+
 ### CustomAttributes
 In progress
 
@@ -130,12 +137,6 @@ In progress
 In progress
 
 ### Hub
-In progress
-
-### LookupFields
-In progress
-
-### Operations
 In progress
 
 ### EnrollmentRestrictionPolicy
