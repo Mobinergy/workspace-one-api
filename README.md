@@ -103,6 +103,9 @@ An NPM package to wrap Workspace One REST APIs.
 ### Operations
 - [x] Retrieves status for an operation.
 
+### Hub
+- [x] Updates Hub Services configuration URL at given organization group.
+
 ### CustomAttributes
 In progress
 
