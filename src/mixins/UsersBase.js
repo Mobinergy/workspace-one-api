@@ -27,37 +27,37 @@ const usersBase = {
         return response.data;
     },
 
-    async bulkActivate(body) {
+    async bulkActivate(config) {
         this.options.url += 'activate';
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async bulkDeactivate(body) {
+    async bulkDeactivate(config) {
         this.options.url += 'deactivate';
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async bulkDelete(body) {
+    async bulkDelete(config) {
         this.options.url += 'delete';
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async uploadSMimeCerts(id, body) {
+    async uploadSMimeCerts(id, config) {
         this.options.url += `${id}/uploadsmimecerts`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;

@@ -3,11 +3,11 @@ const _ = require('lodash');
 
 const groupsBase = {
 
-    async create(parentOgId, body) {
+    async create(parentOgId, config) {
         this.options.url += parentOgId;
         this.options.method = 'POST';
         this.options.headers.Accept += 'version=2';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
@@ -72,19 +72,19 @@ const groupsBase = {
         return response.data;
     },
 
-    async addTag(ogId, body) {
+    async addTag(ogId, config) {
         this.options.url += `${ogId}/addTag`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async updateTag(ogId, tagId, body) {
+    async updateTag(ogId, tagId, config) {
         this.options.url += `${ogId}/tags/${tagId}/update`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;

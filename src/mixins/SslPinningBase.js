@@ -16,19 +16,19 @@ const sslPinningBase = {
         return response.data;
     },
 
-    async createPinnedHost(body) {
+    async createPinnedHost(config) {
         this.options.url += `pinnedhost`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async updatePinnedHostByGuid(guid, body) {
+    async updatePinnedHostByGuid(guid, config) {
         this.options.url += `pinnedhost/${guid}`;
         this.options.method = 'PATCH';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
@@ -42,19 +42,19 @@ const sslPinningBase = {
         return response.data;
     },
 
-    async pinCertificate(body) {
+    async pinCertificate(config) {
         this.options.url += `pincertificate`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async unpinCertificate(body) {
+    async unpinCertificate(config) {
         this.options.url += `unpincertificate`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;

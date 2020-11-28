@@ -3,29 +3,29 @@ const _ = require('lodash');
 
 const adminsBase = {
 
-    async changePasswordById(id, body) {
+    async changePasswordById(id, config) {
         this.options.url += `${id}/changepassword`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async changePasswordByUuid(uuid, body) {
+    async changePasswordByUuid(uuid, config) {
         this.options.url += `${uuid}/password`;
         this.options.method = 'PUT';
         this.options.headers.Accept += 'version=2';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async addRoleById(id, body) {
+    async addRoleById(id, config) {
         this.options.url += `${id}/addrole`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
@@ -40,10 +40,10 @@ const adminsBase = {
         return response.data;
     },
 
-    async removeRoleById(id, body) {
+    async removeRoleById(id, config) {
         this.options.url += `${id}/removerole`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;

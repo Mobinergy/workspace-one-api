@@ -62,9 +62,9 @@ const base = {
         return response.data;
     },
 
-    async create(body) {
+    async create(config) {
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         if (this.name === 'expresslicenses') {
             this.options.headers.Accept = 'application/json;';
@@ -76,20 +76,20 @@ const base = {
         return response.data;
     },
 
-    async updateByUuid(uuid, body) {
+    async updateByUuid(uuid, config) {
         this.options.url += uuid;
         this.options.method = 'PUT';
         this.options.headers.Accept += 'version=2';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
     },
 
-    async updateById(id, body) {
+    async updateById(id, config) {
         this.options.url += this.name === 'groups' ? `${id}` : `${id}/update`;
         this.options.method = this.name === 'groups' ? 'PUT' : 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;

@@ -3,10 +3,10 @@ const _ = require('lodash');
 
 const hubBase = {
 
-    async updateConfig(body) {
+    async updateConfig(config) {
         this.options.url += `hubservicesurl`;
         this.options.method = 'POST';
-        this.options.data = body;
+        this.options.data = config;
 
         let response = await axios(this.options);
         return response.data;
